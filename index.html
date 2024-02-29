@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iValidate - An Email Validator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/img/logo.svg" alt="logo">
+                <span>iValidate</span>
+            </div>
+            <!-- navbar -->
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- main area  -->
+        <div class="container">
+            <h1>enter your email to validate</h1>
+            <form action="/submit" method="post">
+                <label for="username">Username:</label>
+                <input placeholder="Enter Your email to Validate" type="text" id="username" name="username" required>
+                <br><br>
+
+                <!-- <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                <br><br>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br> -->
+
+                <input id="submitBtn" type="submit" class="btn" value="Submit">
+            </form>
+        </div>
+        <div class="container">
+            <h2>Your Results</h2>
+            <div id="resultCont">
+                Your Results will be Shown Here
+            </div>
+        </div>
+    </main>
+    <footer>
+        <!-- footer area  -->
+        Copyright | iValidate.com | All Rights Reserved
+    </footer>
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
